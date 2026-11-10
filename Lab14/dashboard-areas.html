@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!-- Name: YOUR NAME | Roll No: YOUR ROLL NO | Assignment: 14 -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard Areas</title>
+<style>
+  .dash { display: grid; grid-template-columns: 200px 1fr; gap: 10px;
+    grid-template-areas: 'header header' 'sidebar main' 'footer footer'; }
+  .dash > div { padding: 20px; }
+  .header { grid-area: header; background: #1d3557; color: white; }
+  .sidebar { grid-area: sidebar; background: #a8dadc; min-height: 150px; }
+  .main { grid-area: main; background: #f1faee; }
+  .footer { grid-area: footer; background: #457b9d; color: white; }
+</style>
+</head>
+<body>
+<div class="dash">
+  <div class="header">Header</div>
+  <div class="sidebar">Sidebar</div>
+  <div class="main">Main area</div>
+  <div class="footer">Footer</div>
+</div>
+</body>
+</html>
